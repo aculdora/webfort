@@ -1,0 +1,12 @@
+ul {
+	list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar li {
+  margin-right: 20px;
+}

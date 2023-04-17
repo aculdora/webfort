@@ -1,0 +1,211 @@
+*{
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.navbar-nav li a {
+  color: #fff;
+  text-shadow: none; /* remove the default text shadow */
+}
+
+.navbar-nav li a:hover {
+  text-shadow: 0 0 30px #fff; /* add a white text shadow with 10px spread */
+}
+
+ .avatar {
+    box-shadow: -10px 50px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  #icon {
+  width: 50px;
+  height: 50px;
+}
+
+body {
+  background-image: url("./photos/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: url("./photos/cursor.png"), auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar li {
+  margin-right: 20px;
+
+}
+
+.navbar-image-container {
+  position: relative;
+  z-index: 9999; /* add a higher z-index value */
+  margin-left: 10px;
+}
+
+.navbar-image-container img {
+  position: absolute;
+   /* adjust the values to position the image as desired */
+  left: 10px;
+}
+
+.navbar {
+  padding-top: 120px; /* adjust the value to match the height of the image and any desired margin */
+  top: 25px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 100px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 140%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.container a {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 10px;
+}
+
+.card .container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.capstone-container {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 960px; /* set the max-width of the container as per your requirement */
+  text-align: center;
+}
+
+.card-capstone {
+  width: 100%;
+  max-width: 300px; /* adjust this value as per your requirement */
+  margin-bottom: 30px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  height: auto; /* add this line to adjust the height of the card based on the image */
+}
+
+
+.card-capstone img{
+  width: 100%;
+  height: 75%;
+}
+
+.card-capstone:hover {
+  transform: scale(1.2) rotateY(10deg) translateZ(50px);
+  z-index: 1;
+}
+
+
+.card-capstone:hover ~ .card-capstone {
+  transform: translateX(33.33%);
+}
+
+/*TOOLS*/
+
+
+.navbar-nav li.nav-item a.nav-link:hover {
+    color: #F6F8FA;
+    background-color: #F4F7FA;
+}
+
+
+
+.logo{
+   height : 5%;
+    width : 5%;
+    /*margin-top: 2px;*/
+}
+
+/* Bar graph styles */
+/*.skill {
+  margin-bottom: 1rem;
+}
+.skill-name {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+}
+.skill-bar {
+  height: 20px;
+  background-color: #ddd;
+  transition: width 1s ease-in-out;
+}
+/* Animation */
+.skill-bar:hover {
+  animation: grow 1s ease-in-out;
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}*/
+
+.axis-text {
+  fill: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+h1{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #A3A7AC;
+  padding: 10px;
+}
+
+
+.bar rect {
+  fill: #4c4c4c;
+  stroke: #333;
+  stroke-width: 10px;
+}
+
+.bar-text {
+  font-size: 20px;
+}
